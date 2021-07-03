@@ -1,0 +1,22 @@
+.menu {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    background-color: rgba(11, 187, 241, 0.692);
+
+    .menuItem {
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            color: rgba(0, 0, 0, 0.555);
+
+            &:hover {
+                background-color: #fff;
+            }
+
+            &.active {
+                background-color: #fff;
+            }
+        }
+    }
+}

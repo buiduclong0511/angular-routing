@@ -1,0 +1,29 @@
+.listProduct {
+    display: flex;
+    flex-wrap: wrap;
+
+    .productWrapper {
+        width: 20%;
+        cursor: pointer;
+        margin-bottom: 20px;
+        padding: 0 12px;
+
+        .img {
+            border-radius: 8px 8px 0 0;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .productName {
+            font-weight: bold;
+            padding: 5px 0;
+        }
+    }
+}
+
+.heading {
+    padding: 10px 20px;
+}

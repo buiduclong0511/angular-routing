@@ -1,0 +1,13 @@
+<h2 class="heading">Product list</h2>
+<div class="listProduct">
+    <ng-container [ngTemplateOutlet]="productTmpl" *ngFor="let productItem of listProduct" [ngTemplateOutletContext]="{ product: productItem }"></ng-container>
+</div>
+<ng-template #productTmpl let-product="product">
+    <div class="productWrapper" (click)="handleNavigateToDetail(product.id)">
+        <div class="img">
+            <img [src]="product.pathImg" [alt]="product.name">
+        </div>
+        <p class="productName">{{ product.name }}</p>
+        <p class="productDescription">{{ product.description }}</p>
+    </div>
+</ng-template>

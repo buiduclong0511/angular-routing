@@ -1,0 +1,8 @@
+<h2 class="heading">Product detail</h2>
+<div class="wrapper" *ngIf="!!product">
+    <div class="img">
+        <img [src]="product.pathImg" [alt]="product.name">
+    </div>
+    <p class="name">{{ product.name }}</p>
+    <p class="description">{{ product.description }}</p>
+</div>
